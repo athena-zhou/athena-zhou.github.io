@@ -1,0 +1,401 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+
+header {
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+}
+
+.logo {
+    height: 100px;
+    cursor: pointer;
+}
+
+.tagline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: white;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: #000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-family: "Cormorant SC", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.linkedin {
+    height: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: "Cormorant SC", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.intro {
+    max-width: 70vh;
+    margin: 0 auto;
+}
+
+/* grid-template-columns learned from ChatGPT */
+main .work {
+    margin-top: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: "Cormorant SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.work2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+    font-family: "Cormorant SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* transition, hover and transform learned from ChatGPT */
+main .grid {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+main .grid:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+#grid1 {
+    background: url(assets/Nam\ Cheong.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+#grid2 {
+    background: url(assets/22cover.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+
+#grid3 {
+    background: url(assets/3cover.png);
+    background-size: cover;
+    height: 50vh;
+}
+
+#grid4 {
+    background: url(assets/4cover.png);
+    background-size: cover;
+    height: 50vh;
+    margin-left: 20px;
+}
+
+#grid5 {
+    background: url(assets/5\ cover.png);
+    background-size: cover;
+    height: 50vh;
+    margin-right: 20px;
+    margin-bottom: 5vh;
+}
+
+@media(max-width:1208px) {
+
+    #grid1,
+    #grid2,
+    #grid3,
+    #grid4,
+    #grid5 {
+        background-position: center;
+    }
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Parallax effect Learned from W3school */
+.parallax {
+    background-image: url("assets/pawel-czerwinski-g0eRErPBoTA-unsplash.jpg");
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 10px;
+    top: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.intro {
+    max-width: 40%;
+    word-wrap: break-word;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media(max-width:984px) {
+    .intro {
+        max-width: 80%;
+    }
+}
+
+.grid {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    max-width: 85%;
+}
+
+#profile {
+    border-radius: 20px;
+    border: 2px solid #ed217c;
+}
+
+@media (max-width: 450px) {
+    #profile {
+        width: 300px;
+    }
+}
+
+#about-text {
+    color: white;
+    max-width: 60vh;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.project {
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projecttext {
+    max-width: 80%;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#h11 {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 80%;
+}
+
+#cover {
+    margin-bottom: 30px;
+    max-width: 80%;
+}
+
+
+h2 {
+    font-family: "Cormorant SC", serif;
+    text-align: center;
+}
+
+iframe {
+    aspect-ratio: 3/2;
+}
+
+
+/* Slideshow learned from W3school */
+.slideshow-container {
+    max-width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+@media(max-width:720px) {
+
+    .slideshow-container,
+    #figmaimg {
+        max-width: 90%;
+    }
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#diy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#figmaimg {
+    max-width: 80%;
+}
+
+button {
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border: 3px solid #ed217c;
+    border-radius: 10px;
+    background-color: white;
+}
