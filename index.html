@@ -4,232 +4,89 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
-    <title>Ocean Exploration</title>
+    <title>Athena Zhou Portfolio</title>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Girassol&family=Rye&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <div id="current-depth">Current Depth: Sunlight Zone (0-200m)</div>
-    <header class="header-container">
-        <h1 class="rye-regular">Dive Deep! Start Ocean Exploration</h1>
-        <img src="assets/ship.png" alt="ship" width="250px" height="250px" />
+    <header>
+        <section class="tagline">
+            <a href="./index.html">
+                <img class="logo" src="assets/personal logo.png" alt="Athena's logo" />
+            </a>
+            <h1><i>In me, the tiger sniffs the roses.</i></h1>
+        </section>
     </header>
-    <section class="depth-section" id="sunlight-zone">
-        <div class="image-container">
-            <div class="sunlight-left">
-                <div class="creature">
-                    <img src="assets/dolphin.png" alt="a dolphin" class="side-image">
-                    <span class="info">Dolphins live in the 0-200m sunlight zone because it's rich in food like fish and
-                        squid, and they need to surface regularly to breathe.</span>
-                </div>
-                <div class="creature">
-                    <img src="assets/coral.png" alt="coral" class="side-image">
-                    <span class="info">Corals are living animals that build massive reefs, providing habitats for
-                        thousands of marine species and protecting coastlines from erosion.</span>
-                </div>
-            </div>
-            <div class="sunlight-right">
-                <div class="creature">
-                    <img id="fish" src="assets/fishes.png" alt="a lot of fishes" class="large-side-image">
-                    <span class="info">Fish thrive in the sunlight zone because the abundant light supports rich
-                        plankton growth, which forms the base of the marine food chain.</span>
-                </div>
-            </div>
-        </div>
-        <div class="text-container">
-            <h2>0-200m: Sunlight Zone</h2>
-            <p>The most vibrant zone of the ocean.</p>
-        </div>
-    </section>
+    <nav>
+        <a href="./index.html">Work</a>
+        <a href="./about.html">About</a>
+        <a href="assets/Athena Zhou CV.pdf" download target="_blank">Resume</a>
+        <a href="https://www.linkedin.com/in/athena-z-657062338/" target="_blank">
+            <img class="linkedin" src="assets/linkedin 2.png" alt="linkedin logo" />
+        </a>
+    </nav>
 
-    <section class="depth-section" id="twilight-zone">
-        <div class="image-container">
-            <div class="twilight-left">
-                <div class="creature">
-                    <img src="assets/jelly fish.png" alt="jellyfish" class="two-side-image">
-                    <span class="info">Jellyfish in the twilight zone glow with bioluminescence to communicate, attract
-                        prey, or deter predators in the dim depths.</span>
-                </div>
-            </div>
-            <div class="twilight-right">
-                <div class="creature">
-                    <img src="assets/free-dive.png" alt="free-diver" class="two-side-image">
-                    <!-- onclick=...(this) and data type learned from ChatGPT -->
-                    <button onclick="openModal(this)" class="openModal-two" data-type="free-dive">Click me!</button>
-                </div>
-                <div class="creature">
-                    <img src="assets/scuba.png" alt="scuba-diver" class="two-side-image">
-                    <button onclick="openModal(this)" class="openModal-two" data-type="scuba-dive">Click me!</button>
-                </div>
-
-                <div class="creature">
-                    <img src="assets/submarine.png" alt="military submarine" class="side-image">
-                    <span class="info">Military submarines, like the Russian Typhoon-class, can dive to incredible
-                        depths of up to 900 meters, allowing them to operate stealthily in the ocean.
-                    </span>
-                </div>
+    <main>
+        <div class="parallax">
+            <div class="intro">
+                <h1>Hi! I'm Athena Zhou,a journalism student based in Hong Kong. <br /><br />With a passion for
+                    storytelling,design,and filmmaking,<br /> I'm driven to create works
+                    that leave an impact.</h1>
             </div>
         </div>
-        <div class="text-container">
-            <h2>200-1000m:Twillight Zone</h2>
-            <p>Dim light starts fading, and bioluminescence appears.</p>
-        </div>
-    </section>
-
-    <div id="sharedModal" class="modalBackground">
-        <div class="modal">
-            <div class="modalHeader">
-                <button onclick="closeModal()" class="closeButton">X</button>
-            </div>
-            <div class="modalContent">
-                <h3 id="modalTitle">Title</h3>
-                <p id="modalText">Content.</p>
-                <img id="modalImage" src="" alt="" style="width: 100%; height: auto;">
-            </div>
-        </div>
-    </div>
-
-    <section class="depth-section" id="midnight-zone">
-        <div class="image-container">
-            <div class="midnight-left">
-                <div class="creature">
-                    <img id="whale" src="assets/whale.webp" alt="scuba-diver" class="large-side-image">
-                    <span class="info">Sperm whales are the deepest-diving marine mammals, capable of reaching depths
-                        over 2,000 meters in search of their favorite prey, giant squid.</span>
-                </div>
-                <div class="creature">
-                    <img id="squid" src="assets/squid.png" alt="giant squid" class="side-image">
-                    <span class="info">The elusive giant squid uses its massive eyes—up to 10 inches in diameter—to
-                        detect faint light and spot prey in the deep ocean.
-                    </span>
-                </div>
-            </div>
-            <div class="midnight-right">
-                <div class="creature">
-                    <div id="titanic-container">
-                        <img id="titanic" src="assets/titanic.png" alt="Titanic" class="large-side-image">
-                        <div class="hover-slideshow">
-                            <span class="slideshow-text">Discover Titanic!</span>
-                            <div class="hover-slideshow">
-                                <div class="slide">
-                                    <img src="assets/Titanic-neww.png" alt="Titanic real photo">
-                                </div>
-                                <div class="slide">
-                                    <img src="assets/Titanic_wreck.jpg" alt="Titanic wreck 1">
-                                </div>
-                                <div class="slide">
-                                    <img src="assets/Titanic_wreck_2.png" alt="Titanic wreck 2">
-                                </div>
-                            </div>
-                        </div>
+        <div class="work">
+            <a href="./project1.html">
+                <div class="grid" id="grid1">
+                    <div class="caption">
+                        <h2>News</h2>
+                        <p>HK Housing Issue</p>
                     </div>
                 </div>
-            </div>
-            <div class="text-container">
-                <h2>1000-4000m:Midnight Zone</h2>
-                <p>A world of complete darkness and pressure.</p>
-            </div>
-    </section>
-
-    <section class="depth-section" id="abyss-zone">
-        <div class="image-container">
-            <div class="abyss-left">
-                <div class="creature">
-                    <img src="assets/sea cucumber.png" alt="sea cucumber" class="large-side-image">
-                    <span class="info">Sea cucumbers act as the “vacuum cleaners” of the ocean floor, recycling
-                        nutrients by breaking down organic material.</span>
+            </a>
+            <a href="./project2.html" id="a2">
+                <div class="grid" id="grid2">
+                    <div class="caption">
+                        <h2>News</h2>
+                        <p>ChatGPT for Schools</p>
+                    </div>
                 </div>
-            </div>
-            <div class="abyss-right">
-                <div class="creature">
-                    <img src="assets/anglerfish.png" alt="anglerfish" class="two-side-image">
-                    <span class="info">The female anglerfish uses a glowing bioluminescent lure on its head to attract
-                        prey in the pitch-black depths of the ocean.</span>
+            </a>
+            <a href="./project3.html">
+                <div class="grid" id="grid3">
+                    <div class="caption">
+                        <h2>Video</h2>
+                        <p>Last Mahjong Master</p>
+                    </div>
                 </div>
-                <div class="creature">
-                    <img id="octopus" src="assets/octopus.png" alt="dumbo octopus" class="two-side-image">
-                    <span class="info">The Dumbo Octopus flaps its ear-like fins to glide gracefully through the abyssal
-                        zone, thriving at depths of up to 6,000 meters!
-                    </span>
-                </div>
-            </div>
+            </a>
         </div>
-        <div class="text-container">
-            <h2>4000-6000m:Abyss Zone</h2>
-            <p>A habitat for deep-sea creatures in extreme conditions.</p>
-        </div>
-
-    </section>
-
-    <section class="depth-section" id="hadal-zone">
-        <div class="image-container">
-            <div class="hadal-left">
-                <div class="creature">
-                    <img src="assets/snailfish.png" alt="snailfish" class="large-side-image">
-                    <span class="info">Snailfish are the deepest-living fish. Their delicate, jelly-like bodies are
-                        adapted to survive immense pressures
-                        that would crush most animals.</span>
+        <div class="work2">
+            <a href="./project4.html">
+                <div class="grid" id="grid4">
+                    <div class="caption">
+                        <h2>Graphic Design</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="hadal-right">
-                <div class="creature">
-                    <img src="assets/trench.png" alt="Mariana Trench" class="large-side-image">
-                    <span class="info">The Mariana Trench is the deepest trench in the world, reaching 10,994 meters at
-                        Challenger Deep.
-                    </span>
+            </a>
+            <a href="./project5.html">
+                <div class="grid" id="grid5">
+                    <div class="caption">
+                        <h2>UX Design</h2>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <div class="text-container">
-            <h2>6000-11000m:Hadal Zone</h2>
-            <p>The deepest depths, reaching the Mariana Trench.</p>
-        </div>
-    </section>
+    </main>
     <footer>
-        <button onclick="openSourceModal()" class="openModal-source">Source</button>
-        <div id="sourceModal" class="modalBackground">
-            <div class="modal">
-                <div class="modalHeader">
-                    <button onclick="closeModaltwo()" class="closeButton">X</button>
-                </div>
-                <div class="modalContent">
-                    <h2>Citation</h2>
-                    <ul>
-                        <li>Text and data source: All text on this webpage was generated by the ChatGPT
-                            generative AI chatbot.
-                            All facts and data were verified through independent research.</li>
-                        <li>Image source:<ul>
-                                <li>ship:NicePNG</li>
-                                <li>dolphin:Clipart Library</li>
-                                <li>coral:Pngtree</li>
-                                <li>a bunch of small fish:pikbest</li>
-                                <li>jellyfish:Vecteezy</li>
-                                <li>free-diver:pikbest</li>
-                                <li>Herbert Nitsch:ModelsForDivers</li>
-                                <li>scuba-diver:Pngtree</li>
-                                <li>Ahmed-Gabr:Scuba Diving International</li>
-                                <li>submarine:PNGimg</li>
-                                <li>whale:Adobe Stock</li>
-                                <li>squid:DeviantArt</li>
-                                <li>Titanic:CleanPNG</li>
-                                <li>Titanic slideshow:1.WikiPedia 2.WikiPedia 3.BBC</li>
-                                <li>sea cucumber:Adobe Stock</li>
-                                <li>anglerfish:ShutterStock</li>
-                                <li>octopus:DevianArt</li>
-                                <li>snailfish:illustAC</li>
-                                <li>Mariana trench:Freepik</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <p><em>Citation: The introduction's background image and the robot learning image are sourced from
+                Unsplash.</em></p>
     </footer>
-    <script src="scripts.js"></script>
 
+    <script src="scripts.js"></script>
 </body>
+
+</html>
