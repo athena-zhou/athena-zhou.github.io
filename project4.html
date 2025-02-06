@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Athena Zhou Portfolio Project 4</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="tagline">
+            <a href="./index.html">
+                <img class="logo" src="assets/personal logo.png" alt="Athena's logo" />
+            </a>
+            <h1><i>In me, the tiger sniffs the roses.</i></h1>
+        </section>
+    </header>
+    <nav>
+        <a href="./index.html">Work</a>
+        <a href="./about.html">About</a>
+        <a href="assets/Athena Zhou CV.pdf" download target="_blank">Resume</a>
+        <a href="https://www.linkedin.com/in/athena-z-657062338/" target="_blank">
+            <img class="linkedin" src="assets/linkedin 2.png" alt="linkedin logo" />
+        </a>
+    </nav>
+    <main class="project" id="project4">
+        <h1 id="h11">Graphic Design
+        </h1>
+        <section>
+            <h2>
+                Magazine Design of Feature Article for Dune: Prophecy
+            </h2>
+            <!-- Slideshow learned from W3school -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="assets/slide 1.png" alt="magazine page 1" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="assets/slide 2.png" style="width:100%" alt="magazine page 2">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="assets/slide 3.png" style="width:100%" alt="magazine page 3">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <h2>The Challenge</h2>
+        <p id="projecttext">
+            The challenge was to design a feature article for an upcoming review of Dune: Prophecy that captures the
+            epic and nuanced themes of the series while aligning with the editorial style of Vanity Fair.It required
+            integrating futuristic and cinematic elements without overshadowing the text’s readability or editorial
+            purpose.
+        </p>
+        <h2>The Solution</h2>
+        <p id="projecttext">
+            Using a dual-tone blue and gold gradient background, the design established the thematic contrast. The
+            younger character represented chaos with darker tones, while the older character embodied control with
+            golden lighting. A futuristic block font for the title reinforced the sci-fi tone, and careful text
+            placement ensured clarity and balance within the spread.
+        </p>
+
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
